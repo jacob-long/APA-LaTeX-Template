@@ -1,0 +1,53 @@
+% "draftfirst" or "draftall" as option to watermark, 10pt/11pt/12pt for font size, noextraspace if there are spacing issues, "man" for regular papers (assignments, journal submissions), jou for journal-esque formatting
+\documentclass[man, 12pt]{apa6}
+
+\usepackage[american]{babel}
+\usepackage{csquotes}
+\usepackage[style=apa,sortcites=true,sorting=nyt,backend=biber]{biblatex}
+
+%Removes month from bibliography entries, which shouldn't be there for academic journals - optionally, remove the month entries from your .bib file on the offending files. Comment it out if using popular media, newspaper articles, etc. that need the month field. 
+\AtEveryBibitem{
+  \clearfield{month}
+}
+\DeclareLanguageMapping{american}{american-apa}
+
+% Removes "retrieved from on date" from bibliography entry unless it is a wiki URL, which is closer to the spirit of APA's rule. See biblatex-apa documentation for more info.
+\DeclareSourcemap{
+\maps[datatype=bibtex]{
+\map{
+\step[fieldsource=url,
+notmatch=\regexp{wiki},
+final=1]
+\step[fieldset=urldate, null]
+}
+}
+}
+
+%Add your BibTeX files here. Use source location if you aren't keeping them as the same folder as your document.
+\addbibresource{yourbib.bib}
+
+%Can help catch outdated code practices by giving you console warnings. Commented out by default so as to not confuse new users.
+%\usepackage[l2tabu]{nag}
+
+% title, etc.
+\title{Title}
+\shorttitle{Shortitle}
+\author{Writing W. Writer}
+
+% The following four fields make up some of the front matter of your document. If working on an assignment for a course, I typically use "affiliation" for the class name. I have commented out abstract since minimal usage doesn't require it and leaving it blank will generate a blank page. Ignore the warning about the lack of abstract. 
+
+\affiliation{Writing Institute}
+%\abstract{}
+%\keywords{}
+%\authornote{}
+
+\begin{document}
+\maketitle
+
+% This is where the bibliography goes. Finish the body of your paper before this point, other than the appendix. 
+\printbibliography
+
+% I have commented out the appendix section since it isn't a standard for minimal documents. 
+%\appendix 
+
+\end{document}
