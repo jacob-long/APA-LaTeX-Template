@@ -1,11 +1,11 @@
-% "draftfirst" or "draftall" as option to watermark, 10pt/11pt/12pt for font size, noextraspace if there are spacing issues, "man" for regular papers (assignments, journal submissions), jou for journal-esque formatting
+% "draftfirst" or "draftall" as option to watermark, 10pt/11pt/12pt for font size, noextraspace if there are spacing issues, "man" for regular papers (assignments, journal submissions), jou for journal-esque formatting.
 \documentclass[man, 12pt]{apa6}
 
 \usepackage[american]{babel}
 \usepackage{csquotes}
 \usepackage[style=apa,sortcites=true,sorting=nyt,backend=biber]{biblatex}
 
-%Removes month from bibliography entries, which shouldn't be there for academic journals - optionally, remove the month entries from your .bib file on the offending files. Comment it out if using popular media, newspaper articles, etc. that need the month field. 
+% Removes month from bibliography entries, which shouldn't be there for academic journals - optionally, remove the month entries from your .bib file on the offending files. Comment it out if using popular media, newspaper articles, etc. that need the month field. 
 \AtEveryBibitem{
   \clearfield{month}
 }
@@ -23,10 +23,10 @@ final=1]
 }
 }
 
-%Add your BibTeX files here. Use source location if you aren't keeping them as the same folder as your document.
+% Add your BibTeX files here. Use source location if you aren't keeping them as the same folder as your document.
 \addbibresource{yourbib.bib}
 
-%Can help catch outdated code practices by giving you console warnings. Commented out by default so as to not confuse new users.
+% Can help catch outdated code practices by giving you console warnings. Commented out by default so as to not confuse new users.
 %\usepackage[l2tabu]{nag}
 
 % title, etc.
