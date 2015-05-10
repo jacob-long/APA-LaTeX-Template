@@ -21,3 +21,8 @@ Some of these helped me to construct this document, others helped me understand 
 
 ### License
 I am licensing this under [GPL 3.0](http://www.gnu.org/licenses/gpl.html), so just credit me if you decide to distribute a template that you built based on the one provided here. I'd also love to know, for what it's worth. See LICENSE.txt for more details. See [this conversation](http://tex.stackexchange.com/questions/101439/what-license-for-releasing-latex-templates) on Stack Exchange for why I decided to license it and do so as software (I was not involved in the Q&A).
+
+### Final note
+To be clear, this template is not endorsed by the American Psychological Association, the maintainers of the apa6 document class for LaTeX, or anyone else of great importance. For more documentation on using apa6, refer to its page at [CTAN](http://www.ctan.org/tex-archive/macros/latex/contrib/apa6) or the other links included above. 
+
+This program is distributed in the hope that it will be useful, but without warranty. I cannot be held liable for botched theses, angry advisors, or illiterate peer reviewers. 
