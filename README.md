@@ -20,4 +20,4 @@ Some of these helped me to construct this document, others helped me understand 
 
 
 ### License
-I am licensing this under [GPL 3.0](http://www.gnu.org/licenses/gpl.html), so just credit me if you decide to distribute a template that you built based on the one provided here. I'd also love to know, for what it's worth. See LICENSE.txt for more details. See [this conversation](http://tex.stackexchange.com/questions/101439/what-license-for-releasing-latex-templates) on Stack Exchange on why I decided to license it and do so as software (I was not involved in the Q&A).
+I am licensing this under [GPL 3.0](http://www.gnu.org/licenses/gpl.html), so just credit me if you decide to distribute a template that you built based on the one provided here. I'd also love to know, for what it's worth. See LICENSE.txt for more details. See [this conversation](http://tex.stackexchange.com/questions/101439/what-license-for-releasing-latex-templates) on Stack Exchange for why I decided to license it and do so as software (I was not involved in the Q&A).
